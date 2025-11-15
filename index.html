@@ -144,23 +144,33 @@
   
  .gallery {
   display: flex;
+  flex-wrap: wrap;       /* Αν δεν χωράνε, η δεύτερη πάει κάτω */
   justify-content: center;
   gap: 15px;
   margin-top: 20px;
-  margin-bottom: 5px; 
-  align-items: flex-start; /* ευθυγράμμιση στο πάνω μέρος */
+  margin-bottom: 5px;
+  align-items: flex-start; 
 }
 
 .gallery img:first-child {
-  width: 550px;
-  height: 300px;
+  width: 90%;            /* responsive πλάτος */
+  max-width: 550px;
+  height: auto;          /* διατηρεί τις αναλογίες */
 }
 
 .gallery img:nth-child(2) {
-  width: 394px;
-  height: 700px;
-  transform: scale(0.8);   /* μικραίνει στο 70% */
-  transform-origin: top;    /* ευθυγράμμιση από πάνω */
+  width: 80%;            /* responsive πλάτος */
+  max-width: 394px;
+  height: auto;          /* διατηρεί αναλογίες */
+}
+
+@media (max-width: 600px) {
+  .gallery img:first-child,
+  .gallery img:nth-child(2) {
+    width: 100%;          /* οι εικόνες γεμίζουν την οθόνη */
+    max-width: none;
+    height: auto;
+  }
 }
 </style>
 </head>
