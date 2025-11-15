@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Το πάρτυ γενεθλίων της Ελπινίκης - Sailor Moon</title>
+<meta name="description" content="Πρόσκληση για το πάρτυ γενεθλίων της μικρής Ελπινίκης με θέμα Sailor Moon, στην Αθήνα το Σάββατο 22 Νοεμβρίου 2025 στις 12:30.">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Noto Serif', 'Times New Roman', serif;
+    background: linear-gradient(to bottom, #ffe6ff, #660066);
+    color: #4b004b;
+    text-align: center;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 100px 40px 60px 40px;
+  }
+
+  header img {
+    max-width: 450px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 0 15px rgba(255,255,255,0.8));
+  }
+
+  h1, h2, p, #countdown span {
+    color: #4b004b;
+    margin: 10px 0;
+  }
+
+  h1 { font-size: 3em; }
+  h2 { font-size: 2em; }
+  p { font-size: 1.3em; line-height: 1.6; }
+
+  /* Countdown */
+  #countdown {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 2.5em;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  #countdown div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    border-radius: 15px;
+    color: #660066;
+  }
+
+  #countdown span:last-child {
+    font-size: 0.6em;
+    margin-top: 5px;
+  }
+
+  @media (max-width: 600px) {
+    #countdown {
+      font-size: 1.2rem;
+      gap: 12px;
+      margin-top: 40px;
+    }
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  .highlight-box {
+    background-color: rgba(255,255,255,0.8);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    font-style: italic;
+    color: #4b004b;
+    border: 2px solid #ffb3ff;
+  }
+
+  iframe {
+    margin-top: 20px;
+    border-radius: 15px;
+    border: none;
+    width: 90%;
+    max-width: 500px;
+    height: 300px;
+  }
+
+  footer {
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  footer p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px #660066;
+  }
+
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+  }
+
+  .contact-icons a {
+    color: #ffb3ff;
+    font-size: 2em;
+    transition: transform 0.2s, color 0.2s;
+  }
+
+  .contact-icons a:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+  }
+
+  /* Sparkles */
+  .sparkle {
+    position: absolute;
+    top: -10px;
+    color: #ffffff;
+    font-size: 1.5em;
+    user-select: none;
+    animation: fall linear infinite;
+  }
+
+  @keyframes fall {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+  }
+  
+ .gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 5px; 
+  align-items: flex-start; /* ευθυγράμμιση στο πάνω μέρος */
+}
+
+.gallery img:first-child {
+  width: 550px;
+  height: 300px;
+}
+
+.gallery img:nth-child(2) {
+  width: 394px;
+  height: 700px;
+  transform: scale(0.8);   /* μικραίνει στο 70% */
+  transform-origin: top;    /* ευθυγράμμιση από πάνω */
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="sailor_moon.jpg" alt="Sailor Moon Logo">
+  <h1>Το πάρτυ γενεθλίων της Ελπινίκης</h1>
+  <div id="countdown"></div>
+</header>
+
+<section class="highlight-box">
+  <p>
+    Η μικρή μας Ελπινίκη γίνεται 1 έτους και σας προσκαλούμε σε ένα μαγικό Sailor Moon στην Αθήνα! 🌙✨
+  </p>
+</section>
+
+<section>
+  <h2>Ημέρα & Ώρα</h2>
+  <p><b>Σάββατο 22 Νοεμβρίου 2025, 12:30 π.μ.</b></p>
+  <p><b>Blessed Coffee Snack Cafe</b></p>
+  <p> Παπαναστασίου 17 & Ρόδου 68, Θυμαράκια</p>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.8493395866476!2d23.721953776420904!3d38.003974498923334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a36b50b0edbf%3A0x98df1b87c7dcbdae!2sBlessed%20Coffee!5e0!3m2!1sel!2sgr!4v1763164065885!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section>
+  <div class="gallery">
+    <img src="elpiniki1.jpg" alt="Baby photo 1">
+    <img src="elpiniki2.jpg" alt="Baby photo 2">
+  </div>
+</section>
+
+<footer>
+  <p>Με αγάπη, η οικογένεια και οι φίλοι της Ελπινίκης! 🌙💖✨</p>
+</footer>
+
+<section>
+  <h2>Επικοινωνία</h2>
+  <div class="contact-icons">
+    <a href="tel:+306982267310" title="Καλέστε τον Ρομπέρτο"><i class="fas fa-phone"></i></a>
+    <a href="mailto:robert_22_man@yahoo.gr" title="Στείλτε email στον Ρομπέρτο"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.facebook.com/robert.drako" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/drakorobert/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+</section>
+
+<!-- Sparkles -->
+<div class="sparkle" style="left: 12%; animation-duration: 14s;">✦</div>
+<div class="sparkle" style="left: 28%; animation-duration: 18s; font-size: 2em;">✧</div>
+<div class="sparkle" style="left: 45%; animation-duration: 20s;">✦</div>
+<div class="sparkle" style="left: 60%; animation-duration: 22s; font-size: 1.2em;">✧</div>
+<div class="sparkle" style="left: 78%; animation-duration: 17s; font-size: 1.8em;">✦</div>
+<div class="sparkle" style="left: 92%; animation-duration: 25s;">✧</div>
+
+<script>
+const eventDate = new Date('2025-11-22T12:30:00');
+function updateCountdown(){
+  const now = new Date();
+  const diff = eventDate - now;
+  if(diff <= 0){ 
+    document.getElementById('countdown').textContent = 'Σήμερα κάνω πάρτυ!'; 
+    return; 
+  }
+  const d = Math.floor(diff/(1000*60*60*24));
+  const h = Math.floor((diff/(1000*60*60))%24);
+  const m = Math.floor((diff/(1000*60))%60);
+  const s = Math.floor((diff/1000)%60);
+
+  const numbers = [d,h,m,s];
+  const labels = ['ημέρες','ώρες','λεπτά','δευτερόλεπτα'];
+
+  let html = '';
+  for(let i=0;i<4;i++){
+    html += `
+      <div>
+        <span>${numbers[i]}</span>
+        <span>${labels[i]}</span>
+      </div>
+    `;
+  }
+
+  document.getElementById('countdown').innerHTML = html;
+}
+updateCountdown();
+setInterval(updateCountdown,1000);
+</script>
+
+</body>
+</html>
